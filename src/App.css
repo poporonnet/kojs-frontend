@@ -1,6 +1,9 @@
 header p {
   font-family: "IBM Plex Sans JP", sans-serif;
   font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #777788;
 }
 .home h1 {
   font-family: "IBM Plex Sans JP", sans-serif;
