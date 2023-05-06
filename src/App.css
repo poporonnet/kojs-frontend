@@ -1,27 +1,27 @@
 header p {
-    font-family: 'IBM Plex Sans JP', sans-serif;
-    font-weight: bold;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: bold;
 }
 .home h1 {
-    font-family: 'IBM Plex Sans JP', sans-serif;
-    font-weight: normal;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: normal;
 }
 .home p {
-    text-align: left;
-    line-height: 2rem;
-    font-family: 'IBM Plex Sans JP', sans-serif;
-    color: #777788;
-    text-decoration: none;
+  text-align: left;
+  line-height: 2rem;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  color: #777788;
+  text-decoration: none;
 }
 .home h2 {
-    font-family: 'IBM Plex Sans JP', sans-serif;
-    font-weight: bold;
-    color: #777788;
-    text-decoration: none;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: bold;
+  color: #777788;
+  text-decoration: none;
 }
 .Link {
-    font-family: 'IBM Plex Sans JP', sans-serif;
-    font-weight: normal;
-    color: #777788;
-    text-decoration: none;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: normal;
+  color: #777788;
+  text-decoration: none;
 }
