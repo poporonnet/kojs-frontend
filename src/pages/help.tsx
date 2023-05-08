@@ -1,6 +1,5 @@
 import {Header} from "../components/header.tsx";
 import {HelpComponent} from "../components/HelpComponent.tsx";
-
 const helps = [
     {
         question: "お金はかかりかすか",

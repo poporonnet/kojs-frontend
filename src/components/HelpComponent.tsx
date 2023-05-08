@@ -1,3 +1,4 @@
+import "../css/help.css";
 type Props = {
     question: string;
     answer: string;
