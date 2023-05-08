@@ -21,14 +21,7 @@ export function Header(props: HeaderProps) {
                                 : "black";
     return (
         <>
-            <header
-                style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    height: "3rem",
-                }}
-            >
+            <header>
                 <Link to={"/"} className={"Link"}>
                     <p
                         style={{
@@ -40,14 +33,7 @@ export function Header(props: HeaderProps) {
                         Kemomimi
                     </p>
                 </Link>
-                <div
-                    style={{
-                        display: "flex",
-                        width: "60%",
-                        justifyContent: "space-around",
-                        alignItems: "center",
-                    }}
-                >
+                <div className={"links"}>
                     <Link to={"/codeadventure"} className={"Link"}>
                         {props.page === "CodeAdventure" ? (
                             <p>

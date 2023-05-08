@@ -1,0 +1,7 @@
+.help {
+    display: flex;
+    justify-content: center;
+}
+.help p {
+    text-align: left;
+}
