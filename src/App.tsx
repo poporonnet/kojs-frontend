@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { Notfound } from "./pages/notfound.tsx";
 import "./App.css";
+import "./css/header.css";
 import {Help} from "./pages/help.tsx";
 
 function App() {
