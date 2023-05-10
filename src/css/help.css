@@ -5,3 +5,6 @@
 .help p {
     text-align: left;
 }
+.help span {
+    color: #FC3030;
+}
