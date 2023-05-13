@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-
+import "../css/header.css";
 type HeaderProps = {
     page: string;
 };
@@ -26,7 +26,8 @@ export function Header(props: HeaderProps) {
                     <p
                         style={{
                             color: primarycolor,
-                            fontSize: "1.5rem",
+                            fontSize: "1.9rem",
+                            fontWeight: "bold",
                             float: "left",
                         }}
                     >
