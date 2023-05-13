@@ -1,5 +1,6 @@
 import {Header} from "../components/header.tsx";
 import {HelpComponent} from "../components/HelpComponent.tsx";
+import {ButtonComponent} from "../components/ButtonComponent.tsx";
 const helps = [
     {
         question: "お金はかかりかすか",
@@ -27,6 +28,18 @@ export function Help() {
         <center>
             <Header page={"help"}/>
             <h1 style={{ color: "#FC3030" }}>help</h1>
+            <ButtonComponent
+                text={"↩戻る"}
+                color={"#fff"}
+                backgroundColor={"#FC3030"}
+                borderRadius={"1rem"}
+                link={"/"}
+                style={{
+                    position: "absolute",
+                    top: "4rem",
+                    left: "1rem",
+                }}
+            />
             {helps.map((item) => {
                 return (
                     <HelpComponent question={item.question} answer={item.answer}/>
