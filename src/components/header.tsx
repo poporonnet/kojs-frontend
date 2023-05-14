@@ -10,7 +10,7 @@ export function Header(props: HeaderProps) {
             ? "#FC3030"
             : props.page === "CodeAdventure"
                 ? "#FC9230"
-                : props.page === "Stadion"
+                : props.page === "stadion"
                     ? "#3082FC"
                     : props.page === "Playground"
                         ? "#709EF8"
