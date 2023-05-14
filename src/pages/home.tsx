@@ -24,7 +24,7 @@ export function Home() {
           <div
             style={{
               display: "flex",
-              justifyContent: "space-evenly",
+              justifyContent: "space-between",
               flexWrap: "wrap",
             }}
           >

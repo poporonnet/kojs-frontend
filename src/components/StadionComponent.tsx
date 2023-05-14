@@ -10,7 +10,10 @@ export function StadionComponent(props: Props) {
     const color = props.type === "active" ? "#3A88D0" :
         props.type === "archive" ? "#FFD700" : "#22DC22";
     return (
-        <div className={"stadioncomponent"}>
+        <div style={{
+            margin: "1rem 0.5rem",
+            display: "block"
+        }}>
             <Link to={props.link} className={"Link"}>
                 <div style={{
                     border: "solid",
