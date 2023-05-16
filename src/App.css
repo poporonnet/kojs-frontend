@@ -21,3 +21,15 @@
   color: #777788;
   text-decoration: none;
 }
+
+html,
+body,
+root {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.stadion {
+  width: 80%;
+}
