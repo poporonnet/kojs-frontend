@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { Notfound } from "./pages/notfound.tsx";
 import "./App.css";
-import {Help} from "./pages/help.tsx";
-import {StadionHome} from "./pages/stadion-home";
+import { Help } from "./pages/help.tsx";
+import { StadionHome } from "./pages/stadion-home";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/help" element={<Help />} />
-          <Route path="/stadion" element={<StadionHome />} />
+        <Route path="/stadion" element={<StadionHome />} />
         <Route path="/*" element={<Notfound />} />
       </Routes>
     </BrowserRouter>

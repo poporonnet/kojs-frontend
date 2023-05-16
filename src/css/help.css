@@ -1,10 +1,10 @@
 .help {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .help p {
-    text-align: left;
+  text-align: left;
 }
 .help span {
-    color: #FC3030;
+  color: #fc3030;
 }
