@@ -6,33 +6,33 @@ const testdata = [
     name: "第0回KOJSコンテスト",
     time: "mm/dd~mm/dd",
     type: "archive",
-    link: "/",
+    link: "../1/description",
   },
   {
     name: "第1回KOJSコンテスト",
     time: "mm/dd~mm/dd",
     type: "active",
-    link: "/",
+    link: "../2/description",
   },
   {
     name: "第0回KOJSコンテスト",
     time: "mm/dd~mm/dd",
     type: "archive",
-    link: "/",
+    link: "../3/description",
   },
   {
     name: "第1回KOJSコンテスト",
     time: "mm/dd~mm/dd",
     type: "active",
-    link: "/",
+    link: "../4/description",
   },
 ];
 
 export function StadionHome() {
   return (
-    <>
-      <center className={"stadion"}>
-        <Header page={"stadion"} />
+    <center>
+      <Header page={"stadion"} />
+      <div className={"stadion"}>
         <h1>
           <span>Sta</span>dion
         </h1>
@@ -52,7 +52,7 @@ export function StadionHome() {
             />
           ))}
         </div>
-      </center>
-    </>
+      </div>
+    </center>
   );
 }
