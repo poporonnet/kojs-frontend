@@ -1,11 +1,11 @@
 export function StadionProblem() {
   return (
     <>
-      <center style={{
-        width: "80%"
+      <div style={{
+        margin: "0 auto"
       }}>
         <p>問題</p>
-      </center>
+      </div>
     </>
   );
 }
