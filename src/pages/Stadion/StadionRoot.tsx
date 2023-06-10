@@ -57,7 +57,7 @@ export function StadionRoot() {
           {pages.map((page) => {
             if (currentLink[2] === page.link) {
               return (
-                <Link to={`${page.link}`} className={"Link"}>
+                <Link to={`${page.link}`} className={"Link"} key={page.link}>
                   <div id={"current"}>
                     <h3>{page.name}</h3>
                   </div>
@@ -65,7 +65,7 @@ export function StadionRoot() {
               );
             } else {
               return (
-                <Link to={`${page.link}`} className={"Link"}>
+                <Link to={`${page.link}`} className={"Link"} key={page.link}>
                   <div id={"uncurrent"}>
                     <h3>{page.name}</h3>
                   </div>
@@ -77,7 +77,7 @@ export function StadionRoot() {
             {props.problems.map((problem) => {
               if (currentLink[2] === problem.link) {
                 return (
-                  <Link to={`${problem.link}/problem`} className={"Link"}>
+                  <Link to={`${problem.link}/problem`} className={"Link"} key={problem.link}>
                     <div id={"current"}>
                       <h3>{problem.name}</h3>
                     </div>
@@ -85,7 +85,7 @@ export function StadionRoot() {
                 );
               } else {
                 return (
-                  <Link to={`${problem.link}/problem`} className={"Link"}>
+                  <Link to={`${problem.link}/problem`} className={"Link"} key={problem.link}>
                     <div id={"uncurrent"}>
                       <h3>{problem.name}</h3>
                     </div>
