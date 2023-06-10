@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "../../css/stadion.css";
-import {Header} from "../../components/header.tsx";
+import { Header } from "../../components/header.tsx";
 export function StadionRoot() {
   const pages = [
     {
@@ -52,19 +52,23 @@ export function StadionRoot() {
       <div id="stadion">
         <div id="sidebar">
           <Link to={"description"} className={"Link"}>
-            <h2>第１回Kemomimi杯</h2>
+            <h3>第１回Kemomimi杯</h3>
           </Link>
           {pages.map((page) => {
             if (currentLink[2] === page.link) {
               return (
                 <Link to={`${page.link}`} className={"Link"}>
-                  <h2 id={"current"}>{page.name}</h2>
+                  <div id={"current"}>
+                    <h3>{page.name}</h3>
+                  </div>
                 </Link>
               );
             } else {
               return (
                 <Link to={`${page.link}`} className={"Link"}>
-                  <h2 id={"uncurrent"}>{page.name}</h2>
+                  <div id={"uncurrent"}>
+                    <h3>{page.name}</h3>
+                  </div>
                 </Link>
               );
             }
@@ -74,16 +78,17 @@ export function StadionRoot() {
               if (currentLink[2] === problem.link) {
                 return (
                   <Link to={`${problem.link}/problem`} className={"Link"}>
-                    <h2 id={"current"}>{problem.name}</h2>
+                    <div id={"current"}>
+                      <h3>{problem.name}</h3>
+                    </div>
                   </Link>
                 );
               } else {
                 return (
-                  <Link
-                    to={`${problem.link}/problem`}
-                    className={"Link"}
-                  >
-                    <h2 id={"uncurrent"}>{problem.name}</h2>
+                  <Link to={`${problem.link}/problem`} className={"Link"}>
+                    <div id={"uncurrent"}>
+                      <h3>{problem.name}</h3>
+                    </div>
                   </Link>
                 );
               }
