@@ -1,4 +1,6 @@
-{/*ステージの説明と参加登録をするページ*/}
+{
+  /*ステージの説明と参加登録をするページ*/
+}
 export function StadionDescription() {
   return (
     <div id="stadion-description">

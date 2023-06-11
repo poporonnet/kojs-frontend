@@ -1,77 +1,77 @@
 #stadion-page {
-    height: calc(100% - 2.8rem);
+  height: calc(100% - 2.8rem);
 }
 #stadion {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    font-family: "IBM Plex Sans JP", sans-serif;
-    font-weight: bold;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: bold;
 }
 #stadion .content {
-    width: 90%;
+  width: 90%;
 }
 
 #stadion #sidebar {
-    width: 22rem;
-    box-sizing: inherit;
-    background-color: #f7f7f7;
-    border-right: solid 1px #e3e3e3;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  width: 22rem;
+  box-sizing: inherit;
+  background-color: #f7f7f7;
+  border-right: solid 1px #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 #stadion #sidebar > * {
-    flex-shrink: 0;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  flex-shrink: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 #stadion #sidebar #problems {
-    flex-grow: 1;
-    overflow-y: auto;
-    border-top: 3px solid #e3e3e3;
-    font-weight: revert;
+  flex-grow: 1;
+  overflow-y: auto;
+  border-top: 3px solid #e3e3e3;
+  font-weight: revert;
 }
 
 #stadion #sidebar .Link {
-    text-decoration: none;
-    color: #777788;
+  text-decoration: none;
+  color: #777788;
 }
 
 #stadion-description {
-    flex-direction: column;
+  flex-direction: column;
 }
 #stadion h3 {
-    font-family: "IBM Plex Sans JP", sans-serif;
-    font-weight: bold;
-    color: #777788;
-    text-decoration: none;
-    padding: 0;
-    height: 2.1rem;
-    margin: 1.3rem;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: bold;
+  color: #777788;
+  text-decoration: none;
+  padding: 0;
+  height: 2.1rem;
+  margin: 1.3rem;
 }
 .Link {
-    font-family: "IBM Plex Sans JP", sans-serif;
-    font-weight: normal;
-    color: #777788;
-    text-decoration: none;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: normal;
+  color: #777788;
+  text-decoration: none;
 }
 #current {
-    border: solid 1px #3082FC;
-    border-radius: 1rem;
-    background-color: rgba(48, 130, 252, 0.3);
-    text-decoration: none;
-    color: #777788;
+  border: solid 1px #3082fc;
+  border-radius: 1rem;
+  background-color: rgba(48, 130, 252, 0.3);
+  text-decoration: none;
+  color: #777788;
 }
 
 #uncurrent {
-    text-decoration: none;
-    border-radius: 1rem;
-    border: solid 1px rgba(48, 130, 252, 0);
+  text-decoration: none;
+  border-radius: 1rem;
+  border: solid 1px rgba(48, 130, 252, 0);
 }
 
 #uncurrent:hover {
-    background-color: rgba(48, 130, 252, 0.1);
+  background-color: rgba(48, 130, 252, 0.1);
 }

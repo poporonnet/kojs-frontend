@@ -23,8 +23,8 @@ $$\\begin{array}{c}
 \\end{array}$$
 
 $f(x) = \\frac{1}{\\sqrt {2\\pi \\sigma^2}} \\exp\\Biggl(-\\frac{(x-\\mu)^2}{2\\sigma^2}\\Biggr) \\qquad (-\\infty<x<\\infty)$
-`
-}
+`,
+};
 export function StadionProblem() {
   return (
     <>
@@ -32,13 +32,15 @@ export function StadionProblem() {
         <main className={"main"}>
           <div className={"problem"}>
             <h2>{sampleproblem.title}</h2>
-            <Markdown value={sampleproblem.value}/>
+            <Markdown value={sampleproblem.value} />
           </div>
-          <div style={{
-            width: "50%",
-            height: "100%",
-            borderLeft: "2px solid #ccc",
-          }}>
+          <div
+            style={{
+              width: "50%",
+              height: "100%",
+              borderLeft: "2px solid #ccc",
+            }}
+          >
             <ProgramEditor
               height={"80vh"}
               link={"link"}
