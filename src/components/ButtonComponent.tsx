@@ -6,18 +6,18 @@ type ButtonProps = {
   backgroundColor: string;
   borderRadius: string;
   link: string;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
 };
 
 export function ButtonComponent(props: ButtonProps) {
   return (
     <Link
       style={{
-        width: "auto + 2rem",
+        width: "auto + 3rem",
         backgroundColor: props.backgroundColor,
         color: props.color,
         borderRadius: props.borderRadius,
-        height: "2rem",
+        height: "3rem",
         border: "none",
         textDecoration: "none",
         ...props.style,

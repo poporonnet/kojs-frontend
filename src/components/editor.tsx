@@ -57,7 +57,7 @@ export function ProgramEditor(props: EditorProps) {
             color: "black",
             backgroundColor: "#FFD700",
             borderRadius: "0.5rem",
-            width: "6rem",
+            width: "6refm",
             height: "3rem",
             border: "none",
             fontSize: "1.4rem",
