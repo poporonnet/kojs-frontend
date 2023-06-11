@@ -1,5 +1,3 @@
 export function StadionRanking() {
-  return (
-    <>ランキング</>
-  )
+  return <>ランキング</>;
 }

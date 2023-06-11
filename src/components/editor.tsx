@@ -2,14 +2,13 @@ import Editor from "@monaco-editor/react";
 import { languages } from "./languages.ts";
 import { useState } from "react";
 type EditorProps = {
-  language: string;
   height: string;
   style?: React.CSSProperties;
   value?: string;
   link: string;
 };
 export function ProgramEditor(props: EditorProps) {
-  const [language, setLanguage] = useState<string>(props.language);
+  const [language, setLanguage] = useState<string>("C");
   return (
     <div style={props.style}>
       <Editor
@@ -29,21 +28,20 @@ export function ProgramEditor(props: EditorProps) {
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",
+          borderTop: "2px solid #e3e3e3",
+          height: "4rem",
         }}
       >
-        {/*言語を選択するボタン
-                選択肢を上方向に表示
-                */}
+        {/*
+        言語を選択するボタン
+        x選択肢を上方向に表示
+        */}
         <select
           style={{
-            width: "auto",
-            height: "auto",
             fontSize: "1.5rem",
             padding: "0.2rem 0.6rem",
             margin: "0.2rem 0.6rem",
-            border: "none",
-            backgroundColor: "#fff",
-            borderBottom: "solid 2px #000",
+            backgroundColor: "none",
           }}
           value={language}
           onChange={(e) => setLanguage(e.target.value)}
@@ -59,13 +57,13 @@ export function ProgramEditor(props: EditorProps) {
             color: "black",
             backgroundColor: "#FFD700",
             borderRadius: "0.5rem",
-            width: "5rem",
+            width: "6rem",
             height: "3rem",
             border: "none",
             fontSize: "1.4rem",
           }}
         >
-          提出
+          提出 ▶︎
         </button>
       </div>
     </div>
