@@ -1,0 +1,27 @@
+#stadion-ranking {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#stadion-ranking h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 4rem auto;
+    color: #777788;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#stadion-ranking .header {
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    max-width: 1000px;
+}
+
+#stadion-ranking .header p {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
