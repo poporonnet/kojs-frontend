@@ -47,56 +47,66 @@ export function StadionRoot() {
     /*再レンダリング用関数*/
   }
   return (
-    <>
+    <div id={"stadion-page"}>
       <Header page={"stadion"} />
       <div id="stadion">
         <div id="sidebar">
-          <Link to={"description"} className={"Link"}>
-            <h3>第１回Kemomimi杯</h3>
-          </Link>
-          {pages.map((page) => {
-            if (currentLink[2] === page.link) {
-              return (
-                <Link to={`${page.link}`} className={"Link"} key={page.link}>
-                  <div id={"current"}>
-                    <h3>{page.name}</h3>
-                  </div>
-                </Link>
-              );
-            } else {
-              return (
-                <Link to={`${page.link}`} className={"Link"} key={page.link}>
-                  <div id={"uncurrent"}>
-                    <h3>{page.name}</h3>
-                  </div>
-                </Link>
-              );
-            }
-          })}
-          <div id="problems">
-            {props.problems.map((problem) => {
-              if (currentLink[2] === problem.link) {
+          <div id={"content"}>
+            <Link to={"description"} className={"Link"}>
+              <h3>第１回Kemomimi杯</h3>
+            </Link>
+            {pages.map((page) => {
+              if (currentLink[2] === page.link) {
                 return (
-                  <Link to={`${problem.link}/problem`} className={"Link"} key={problem.link}>
+                  <Link to={`${page.link}`} className={"Link"} key={page.link}>
                     <div id={"current"}>
-                      <h3>{problem.name}</h3>
+                      <h3>{page.name}</h3>
                     </div>
                   </Link>
                 );
               } else {
                 return (
-                  <Link to={`${problem.link}/problem`} className={"Link"} key={problem.link}>
+                  <Link to={`${page.link}`} className={"Link"} key={page.link}>
                     <div id={"uncurrent"}>
-                      <h3>{problem.name}</h3>
+                      <h3>{page.name}</h3>
                     </div>
                   </Link>
                 );
               }
             })}
+            <div id="problems">
+              {props.problems.map((problem) => {
+                if (currentLink[2] === problem.link) {
+                  return (
+                    <Link
+                      to={`${problem.link}/problem`}
+                      className={"Link"}
+                      key={problem.link}
+                    >
+                      <div id={"current"}>
+                        <h3>{problem.name}</h3>
+                      </div>
+                    </Link>
+                  );
+                } else {
+                  return (
+                    <Link
+                      to={`${problem.link}/problem`}
+                      className={"Link"}
+                      key={problem.link}
+                    >
+                      <div id={"uncurrent"}>
+                        <h3>{problem.name}</h3>
+                      </div>
+                    </Link>
+                  );
+                }
+              })}
+            </div>
           </div>
         </div>
         <Outlet />
       </div>
-    </>
+    </div>
   );
 }
