@@ -1,12 +1,12 @@
 .ranking-component {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #e3e3e3;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1000px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #e3e3e3;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
 }
 .ranking-component p {
-    text-align: center;
-    flex: 1;
+  text-align: center;
+  flex: 1;
 }

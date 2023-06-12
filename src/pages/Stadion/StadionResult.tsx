@@ -25,10 +25,10 @@ export function StadionResult() {
               link={data.link}
             />
           </div>
-        )
+        );
       })}
     </div>
-  )
+  );
 }
 const headers = [
   "提出した問題",
@@ -36,7 +36,7 @@ const headers = [
   "実行時間",
   "言語",
   "提出結果",
-  "詳細"
+  "詳細",
 ];
 const sampledata: ResultProps[] = [
   {
@@ -45,7 +45,7 @@ const sampledata: ResultProps[] = [
     time: "100ms",
     lang: "C(GCC)",
     result: "AC",
-    link: "link"
+    link: "link",
   },
   {
     title: "A問題",
@@ -53,7 +53,7 @@ const sampledata: ResultProps[] = [
     time: "100ms",
     lang: "C(GCC)",
     result: "WA",
-    link: "link"
+    link: "link",
   },
   {
     title: "A問題",
@@ -61,7 +61,7 @@ const sampledata: ResultProps[] = [
     time: "100ms",
     lang: "C(GCC)",
     result: "",
-    link: "link"
+    link: "link",
   },
   {
     title: "A問題",
@@ -69,6 +69,6 @@ const sampledata: ResultProps[] = [
     time: "100ms",
     lang: "C(GCC)",
     result: "TWA",
-    link: "link"
-  }
-]
+    link: "link",
+  },
+];

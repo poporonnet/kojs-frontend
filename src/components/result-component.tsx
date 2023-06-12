@@ -1,14 +1,14 @@
 import "../css/result-component.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export type ResultProps = {
   title: string;
   memory: string;
   time: string;
   lang: string;
-  result : string;
+  result: string;
   link: string;
-}
+};
 export function ResultComponent(props: ResultProps) {
   return (
     <div id={"result-component"}>
@@ -31,24 +31,24 @@ export function ResultComponent(props: ResultProps) {
               props.result === "AC"
                 ? "green"
                 : props.result === "WA"
-                  ? "red"
-                  : props.result === "TWA"
-                    ? "orange"
-                    : "gray",
+                ? "red"
+                : props.result === "TWA"
+                ? "orange"
+                : "gray",
           }}
         >
           {props.result === "AC"
             ? "AC"
             : props.result === "WA"
-              ? "WA"
-              : props.result === "TWA"
-                ? "TWA"
-                : "判定中"}
+            ? "WA"
+            : props.result === "TWA"
+            ? "TWA"
+            : "判定中"}
         </p>
       </div>
       <div className={"content"}>
         <Link to={props.link}>詳細</Link>
       </div>
     </div>
-  )
+  );
 }
