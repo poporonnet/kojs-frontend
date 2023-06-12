@@ -1,10 +1,31 @@
-.help {
+#help {
+  font-family: "IBM Plex Sans JP", sans-serif;
+}
+
+#help h1 {
+  margin: 2rem 0;
+  color: #FC3030;
+  text-align: center;
+}
+
+#help #content {
+  margin: 1rem auto;
   display: flex;
-  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-bottom: 2px solid #e3e3e3;
 }
-.help p {
-  text-align: left;
+
+#help #content .q,
+#help #content .a {
+  flex: 1;
 }
-.help span {
-  color: #fc3030;
+
+#help #content .q {
+  font-weight: bold;
+}
+
+#help #content .a {
+  margin-left: 1rem;
 }
