@@ -8,12 +8,8 @@ export type RankingProps = {
 export function RankingComponent(props: RankingProps) {
   return (
     <div className={"ranking-component"}>
-      <p>
-        {props.rank}
-      </p>
-      <p>
-        {props.name}
-      </p>
+      <p>{props.rank}</p>
+      <p>{props.name}</p>
       {props.status.map((status, index) => (
         <p
           style={{
@@ -21,20 +17,20 @@ export function RankingComponent(props: RankingProps) {
               status === "AC"
                 ? "green"
                 : status === "WA"
-                  ? "red"
-                  : status === "TWA"
-                    ? "orange"
-                    : "gray",
+                ? "red"
+                : status === "TWA"
+                ? "orange"
+                : "gray",
           }}
           key={index}
         >
           {status === "AC"
             ? "◯"
             : status === "WA"
-              ? "×"
-              : status === "TWA"
-                ? "△"
-                : "-"}
+            ? "×"
+            : status === "TWA"
+            ? "△"
+            : "-"}
         </p>
       ))}
       <p>{props.score}</p>

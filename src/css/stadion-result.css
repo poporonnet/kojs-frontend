@@ -1,0 +1,23 @@
+#stadion-result {
+  width: 100%;
+  color: #777788;
+}
+
+#stadion-result h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+  margin-top: 5rem;
+}
+#stadion-result #header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #e3e3e3;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+#stadion-result #header .content {
+  flex: 1;
+  text-align: center;
+}
