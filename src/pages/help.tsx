@@ -7,16 +7,16 @@ export function Help() {
     <div id={"help"}>
       <Header page={"help"} />
       <h1 style={{ color: "#FC3030" }}>help</h1>
-        {helps.map((data, index) => (
-          <div key={index} id={"content"}>
-            <div className={"q"}>
-              <p>{data.question}</p>
-            </div>
-            <div className={"a"}>
-              <p>{data.answer}</p>
-            </div>
+      {helps.map((data, index) => (
+        <div key={index} id={"content"}>
+          <div className={"q"}>
+            <p>{data.question}</p>
           </div>
-        ))}
+          <div className={"a"}>
+            <p>{data.answer}</p>
+          </div>
+        </div>
+      ))}
       <ButtonComponent
         text={"↩戻る"}
         color={"#fff"}
