@@ -1,6 +1,37 @@
 import { Header } from "../components/header.tsx";
-import { HelpComponent } from "../components/HelpComponent.tsx";
 import { ButtonComponent } from "../components/ButtonComponent.tsx";
+import "../css/help.css";
+
+export function Help() {
+  return (
+    <div id={"help"}>
+      <Header page={"help"} />
+      <h1 style={{ color: "#FC3030" }}>help</h1>
+      {helps.map((data, index) => (
+        <div key={index} id={"content"}>
+          <div className={"q"}>
+            <p>{data.question}</p>
+          </div>
+          <div className={"a"}>
+            <p>{data.answer}</p>
+          </div>
+        </div>
+      ))}
+      <ButtonComponent
+        text={"↩戻る"}
+        color={"#fff"}
+        backgroundColor={"#FC3030"}
+        borderRadius={"1rem"}
+        link={"/"}
+        style={{
+          position: "absolute",
+          top: "4rem",
+          left: "1rem",
+        }}
+      />
+    </div>
+  );
+}
 const helps = [
   {
     question: "お金はかかりかすか",
@@ -25,26 +56,3 @@ const helps = [
       "お手数ですが、kemomimi-support@poporon.net宛にメールにてお知らせください。",
   },
 ];
-export function Help() {
-  return (
-    <center>
-      <Header page={"help"} />
-      <h1 style={{ color: "#FC3030" }}>help</h1>
-      <ButtonComponent
-        text={"↩戻る"}
-        color={"#fff"}
-        backgroundColor={"#FC3030"}
-        borderRadius={"1rem"}
-        link={"/"}
-        style={{
-          position: "absolute",
-          top: "4rem",
-          left: "1rem",
-        }}
-      />
-      {helps.map((item) => {
-        return <HelpComponent question={item.question} answer={item.answer} />;
-      })}
-    </center>
-  );
-}
