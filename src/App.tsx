@@ -10,6 +10,7 @@ import { StadionDescription } from "./pages/Stadion/StadionDescription.tsx";
 import { StadionProblem } from "./pages/Stadion/StadionProblem.tsx";
 import { StadionResult } from "./pages/Stadion/StadionResult.tsx";
 import { StadionRanking } from "./pages/Stadion/StadionRanking.tsx";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         </Route>
         <Route path="/*" element={<Notfound />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
