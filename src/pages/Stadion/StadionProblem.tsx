@@ -20,10 +20,7 @@ export function StadionProblem() {
               minHeight: "70px",
             }}
           >
-            <ProgramEditor
-              height={"80vh"}
-              link={"link"}
-            />
+            <ProgramEditor link={"link"} />
           </div>
         </main>
       </div>

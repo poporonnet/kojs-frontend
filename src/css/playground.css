@@ -1,0 +1,36 @@
+#playground {
+  width: 100%;
+  height: 100%;
+  color: #777788;
+  font-family: "IBM Plex Sans JP", sans-serif;
+}
+
+#playground main {
+  display: flex;
+  height: calc(100% - 12.5rem);
+}
+
+#playground main .nanka {
+  width: 50%;
+  height: 100%;
+}
+#playground main .nanka .input {
+}
+#playground main .nanka .output {
+}
+#playground main .nanka .area {
+  width: 90%;
+  margin: 0 auto;
+  height: 20rem;
+}
+#playground main .editor {
+  width: 50%;
+  height: 100%;
+}
+#playground h1 {
+  display: flex;
+  justify-content: center;
+  color: #709ef8;
+  font-weight: normal;
+  margin-top: 5rem;
+}
