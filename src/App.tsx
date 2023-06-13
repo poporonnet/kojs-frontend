@@ -3,6 +3,7 @@ import { Home } from "./pages/home";
 import { Notfound } from "./pages/notfound.tsx";
 import "./App.css";
 import { Help } from "./pages/help.tsx";
+import { Playground } from "./pages/playground";
 import { StadionHome } from "./pages/stadion-home";
 import { StadionRoot } from "./pages/Stadion/StadionRoot.tsx";
 import { StadionDescription } from "./pages/Stadion/StadionDescription.tsx";
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/help" element={<Help />} />
+        <Route path="/playground" element={<Playground />} />
         <Route path="/stadion" element={<StadionHome />} />
         <Route path=":stadionId" element={<StadionRoot />}>
           <Route path="description" element={<StadionDescription />} />

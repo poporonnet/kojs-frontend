@@ -3,7 +3,6 @@ import { languages } from "./languages.ts";
 import { useState } from "react";
 
 type EditorProps = {
-  height: string;
   value?: string;
   link: string;
 };
@@ -30,7 +29,7 @@ export function ProgramEditor(props: EditorProps) {
       >
         <Editor
           language={language}
-          height={props.height}
+          height="100%"
           value={props.value}
           theme="vs-light"
           options={{
