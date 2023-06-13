@@ -1,6 +1,4 @@
 #stadion-problem {
-  margin-top: 1rem;
-  margin-left: 1rem;
   width: 100%;
   height: 100%;
 }
@@ -15,7 +13,7 @@
 #stadion-problem .title {
   margin: 0 auto;
 }
-#stadion-problem .main {
+#stadion-problem main {
   display: flex;
   justify-content: space-between;
   width: 100%;
