@@ -47,7 +47,6 @@ export function ProgramEditor(props: EditorProps) {
           justifyContent: "space-evenly",
           alignItems: "center",
           height: "4rem",
-          maiHeight: "70px",
         }}
       >
         {/*

@@ -17,16 +17,12 @@ export function StadionProblem() {
               width: "50%",
               height: "100%",
               borderLeft: "2px solid #ccc",
+              minHeight: "70px",
             }}
           >
             <ProgramEditor
               height={"80vh"}
               link={"link"}
-              style={{
-                width: "100%",
-                height: "100%",
-                marginTop: "1rem",
-              }}
             />
           </div>
         </main>
