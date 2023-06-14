@@ -16,7 +16,7 @@ export function StadionComponent(props: Props) {
   return (
     <div
       style={{
-        margin: "1rem 0.5rem",
+        margin: "1rem auto",
         display: "block",
       }}
     >
@@ -24,7 +24,7 @@ export function StadionComponent(props: Props) {
         <div
           style={{
             border: "solid",
-            width: "20rem",
+            width: "50rem",
             height: "8rem",
             borderColor: color,
             borderRadius: "1rem",
@@ -34,10 +34,10 @@ export function StadionComponent(props: Props) {
             marginRight: "1rem",
           }}
         >
-          <center className={"border"}>
+          <div className={"title"}>
             <h3>{props.name}</h3>
-          </center>
-          <div style={{ width: "90%" }}>
+          </div>
+          <div className={"data"}>
             <p>{props.time}</p>
           </div>
         </div>
