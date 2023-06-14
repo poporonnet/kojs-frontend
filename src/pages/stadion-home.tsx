@@ -17,13 +17,15 @@ export function StadionHome() {
             justifyContent: "space-between",
           }}
         >
-          {testdata.map((item) => (
-            <StadionComponent
-              name={item.name}
-              time={item.time}
-              type={item.type}
-              link={item.link}
-            />
+          {testdata.map((item, index) => (
+            <div key={index}>
+              <StadionComponent
+                name={item.name}
+                time={item.time}
+                type={item.type}
+                link={item.link}
+              />
+            </div>
           ))}
         </div>
       </main>
