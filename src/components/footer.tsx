@@ -13,8 +13,8 @@ export function Footer() {
         </ul>
       </div>
       <div className={"logo"}>
-        <img src={poporonLogo} alt={"PoporonNetworkのロゴ"}/>
+        <img src={poporonLogo} alt={"PoporonNetworkのロゴ"} />
       </div>
     </footer>
-  )
+  );
 }
