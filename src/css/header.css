@@ -17,3 +17,28 @@ header .links p {
   text-decoration: none;
   color: #777788;
 }
+header #account {
+
+}
+header #account .logined{
+
+}
+header #account .notlogined {
+  border: none;
+  background-color: #1a73e8;
+  color: #ffffff;
+  width: 7rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header #account .notlogined:hover {
+  background-color: #0c5fcb;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
