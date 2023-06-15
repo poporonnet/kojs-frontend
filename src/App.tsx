@@ -13,6 +13,7 @@ import { StadionRanking } from "./pages/Stadion/StadionRanking.tsx";
 import { Footer } from "./components/footer";
 import { Login } from "./pages/login";
 import { Mypage } from "./pages/mypage";
+import { CreateAccount } from "./pages/create-account";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/stadion" element={<StadionHome />} />
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/create-account" element={<CreateAccount />} />
         <Route path=":stadionId" element={<StadionRoot />}>
           <Route path="description" element={<StadionDescription />} />
           <Route path=":problemId/problem" element={<StadionProblem />} />

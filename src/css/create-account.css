@@ -1,0 +1,69 @@
+#create-account {
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    font-family: "IBM Plex Sans JP", sans-serif;
+}
+
+#create-account #create-account-form {
+    width: 90%;
+    max-width: 600px;
+    min-width: 130px;
+    margin: 5rem auto;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100px;
+}
+
+#create-account h1 {
+    margin: 2rem auto;
+    font-weight: normal;
+}
+#create-account .input {
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+#create-account .input label {
+    left: 1rem;
+}
+#create-account .input .text {
+    margin: 0 auto;
+    width: 100%;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #777788;
+    font-size: 1.3rem;
+}
+#create-account .create-account p {
+    margin: 3rem auto;
+    font-size: 1.3rem;
+    text-align: center;
+}
+#create-account .create-account-link {
+    color: #4665D0;
+}
+#create-account .submit {
+    margin: 3rem auto;
+    width: 10rem;
+    height: 2rem;
+    background-color: #0c5fcb;
+    color: #fff;
+    font-size: 1.3rem;
+    box-shadow: none;
+    border-radius: 5px;
+    border: 1px solid #0c5fcb;
+    align-items: center;
+    cursor: pointer;
+}
+#create-account .submit:hover {
+    background-color: #0c5fcb;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
