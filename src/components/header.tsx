@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import "../css/header.css";
 import * as React from 'react';
+import icon from "/test-icon.svg";
 type HeaderProps = {
   page: string;
 };
 
 const isLogin = false;
-const accountimg = "https://avatars.githubusercontent.com/u/75256761?v=4";
-
 export function Header(props: HeaderProps) {
   const [open, setOpen] = React.useState<boolean>(false);
   const primarycolor =
@@ -75,31 +74,34 @@ export function Header(props: HeaderProps) {
             )}
           </Link>
         </div>
-        <div id={"account"} onClick={() => setOpen(!open)}>
+        <div id={"account"}>
           {isLogin ? (
-            <button className={"logined"}>
-              <img src={accountimg} alt={"account"} />
-            </button>
+            <div className={"logined"} onClick={() => setOpen(!open)}>
+              <img src={icon} alt={"account"} />
+            </div>
           ) : (
             <Link to={"/login"} className={"Link"}>
-              <div className={"notlogined"}>
+              <div className={"notlogined"} onClick={() => setOpen(!open)}>
                 <p>ログイン</p><span className="material-symbols-outlined">login</span>
               </div>
             </Link>
           )}
         </div>
-        {open && (
+        { open && isLogin && (
           <div className={"accountmenu"}>
-            <Link to={"/mypage"} className={"Link"}>
+            <Link to={"/mypage"} className={"Link up"}>
               <p>マイページ</p>
             </Link>
             <Link to={"/setting"} className={"Link"}>
               <p>設定</p>
             </Link>
-            <Link to={"/logout"} className={"Link"}>
+            <Link to={"/logout"} className={"Link bottom"}>
               <p>ログアウト</p>
             </Link>
           </div>
+        )}
+        { open && isLogin && (
+          <div className={"overlay"} onClick={() => setOpen(!open)}></div>
         )}
       </header>
     </>
