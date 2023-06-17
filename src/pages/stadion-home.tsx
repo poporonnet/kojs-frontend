@@ -1,6 +1,7 @@
 import { Header } from "../components/header";
 import "../css/stadion-home.css";
 import { StadionComponent } from "../components/StadionComponent";
+import { Footer } from "../components/footer";
 
 export function StadionHome() {
   return (
@@ -10,13 +11,9 @@ export function StadionHome() {
         <h1>
           <span>Sta</span>dion
         </h1>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-          }}
-        >
+        <div style={{
+          margin: "0 auto",
+        }}>
           {testdata.map((item, index) => (
             <div key={index}>
               <StadionComponent
@@ -29,6 +26,7 @@ export function StadionHome() {
           ))}
         </div>
       </main>
+      <Footer/>
     </div>
   );
 }
@@ -55,31 +53,7 @@ const testdata = [
   {
     name: "第3回KOJSコンテスト",
     time: "mm/dd~mm/dd",
-    type: "archive",
-    link: "../stadion/3/description",
-  },
-  {
-    name: "第4回KOJSコンテスト",
-    time: "mm/dd~mm/dd",
-    type: "archive",
-    link: "../stadion/4/description",
-  },
-  {
-    name: "第5回KOJSコンテスト",
-    time: "mm/dd~mm/dd",
-    type: "archive",
-    link: "../stadion/5/description",
-  },
-  {
-    name: "第6回KOJSコンテスト",
-    time: "mm/dd~mm/dd",
-    type: "archive",
-    link: "../stadion/6/description",
-  },
-  {
-    name: "第7回KOJSコンテスト",
-    time: "mm/dd~mm/dd",
     type: "active",
-    link: "../stadion/7/description",
+    link: "../stadion/3/description",
   },
 ];
