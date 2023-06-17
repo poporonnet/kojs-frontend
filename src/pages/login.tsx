@@ -1,6 +1,7 @@
 import { Header } from "../components/header";
 import "../css/login.css";
 import { Link } from "react-router-dom";
+import { Footer } from "../components/footer";
 export function Login() {
   return (
     <div className={"page"}>
@@ -22,6 +23,7 @@ export function Login() {
           <input type={"submit"} className={"submit"} value={"ログイン"} />
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

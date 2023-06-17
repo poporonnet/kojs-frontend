@@ -1,6 +1,7 @@
 import { Header } from "../components/header";
 import "../css/create-account.css"
 import { Link } from "react-router-dom";
+import { Footer } from "../components/footer";
 export function CreateAccount(){
   return (
     <div className={"page"}>
@@ -26,6 +27,7 @@ export function CreateAccount(){
           <input type={"submit"} className={"submit"} value={"アカウント作成"} />
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
