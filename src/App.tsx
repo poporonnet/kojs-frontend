@@ -32,9 +32,7 @@ function App() {
           <Route path="result" element={<StadionResult />} />
           <Route path="ranking" element={<StadionRanking />} />
         </Route>
-        <Route path="/*" element={<Notfound />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

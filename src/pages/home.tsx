@@ -1,9 +1,10 @@
 import { Header } from "../components/header.tsx";
 import { Link } from "react-router-dom";
+import { Footer } from "../components/footer";
 
 export function Home() {
   return (
-    <center>
+    <div>
       <Header page={"home"} />
       <div
         className={"home"}
@@ -11,6 +12,7 @@ export function Home() {
           width: "80%",
           maxWidth: "1000px",
           minWidth: "500px",
+          margin: "0 auto",
         }}
       >
         <center>
@@ -58,7 +60,7 @@ export function Home() {
                 <p>自分の実力をためそう!</p>
               </div>
             </Link>
-            <Link to={"/codeplayground"} className={"Link"}>
+            <Link to={"/playground"} className={"Link"}>
               <div
                 style={{
                   borderRadius: "1rem",
@@ -76,6 +78,7 @@ export function Home() {
           </div>
         </center>
       </div>
-    </center>
+      <Footer/>
+    </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Header } from "../components/header.tsx";
 import { ButtonComponent } from "../components/ButtonComponent.tsx";
 import "../css/help.css";
+import { Footer } from "../components/footer";
 
 export function Help() {
   return (
@@ -29,6 +30,7 @@ export function Help() {
           left: "1rem",
         }}
       />
+      <Footer/>
     </div>
   );
 }

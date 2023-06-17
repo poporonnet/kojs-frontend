@@ -2,7 +2,11 @@ import "../css/footer.css";
 import poporonLogo from "/footerlogo.svg";
 export function Footer() {
   return (
-    <footer>
+    <footer style={{
+      bottom: "0px",
+      position: "fixed",
+      width: "100%"
+    }}>
       <div className={"content"}>
         <ul>
           <li>利用規約</li>
