@@ -26,7 +26,7 @@ function App() {
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/create-account" element={<CreateAccount />} />
-        <Route path=":stadionId" element={<StadionRoot />}>
+        <Route path="stadion/:stadionId" element={<StadionRoot />}>
           <Route path="description" element={<StadionDescription />} />
           <Route path=":problemId/problem" element={<StadionProblem />} />
           <Route path="result" element={<StadionResult />} />
