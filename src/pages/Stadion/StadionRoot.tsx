@@ -56,7 +56,7 @@ export function StadionRoot() {
               <h3>第１回Kemomimi杯</h3>
             </Link>
             {pages.map((page) => {
-              if (currentLink[2] === page.link) {
+              if (currentLink[3] === page.link) {
                 return (
                   <Link to={`${page.link}`} className={"Link"} key={page.link}>
                     <div id={"current"}>
@@ -76,7 +76,7 @@ export function StadionRoot() {
             })}
             <div id="problems">
               {props.problems.map((problem) => {
-                if (currentLink[2] === problem.link) {
+                if (currentLink[3] === problem.link) {
                   return (
                     <Link
                       to={`${problem.link}/problem`}
