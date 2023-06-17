@@ -5,6 +5,7 @@ export function Notfound() {
   const [time, setTime] = useState<number>(5);
   setTimeout(() => {
     setTime(time - 1);
+    if (time < 0) setTime(5);
   }, 1000);
   if (time === 0) {
     window.location.href = "/";

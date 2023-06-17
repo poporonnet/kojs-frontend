@@ -1,24 +1,28 @@
 import { Link } from "react-router-dom";
 import "../css/header.css";
+import * as React from 'react';
+import icon from "/test-icon.svg";
 type HeaderProps = {
   page: string;
 };
 
+const isLogin = false;
 export function Header(props: HeaderProps) {
+  const [open, setOpen] = React.useState<boolean>(false);
   const primarycolor =
     props.page === "home"
       ? "#FC3030"
       : props.page === "CodeAdventure"
-      ? "#FC9230"
-      : props.page === "stadion"
-      ? "#3082FC"
-      : props.page === "Playground"
-      ? "#709EF8"
-      : props.page === "help"
-      ? "#FC3030"
-      : props.page === "mypage"
-      ? "#BB30FC"
-      : "black";
+        ? "#FC9230"
+        : props.page === "stadion"
+          ? "#3082FC"
+          : props.page === "Playground"
+            ? "#709EF8"
+            : props.page === "help"
+              ? "#FC3030"
+              : props.page === "mypage"
+                ? "#BB30FC"
+                : "black";
   return (
     <>
       <header>
@@ -70,19 +74,35 @@ export function Header(props: HeaderProps) {
             )}
           </Link>
         </div>
-        {/* eslint-disable-next-line no-irregular-whitespace */}
-        {/* これはユーザーのアイコン　臨時でこうしてる */}
-        <div
-          style={{
-            float: "right",
-            border: `3px solid ${primarycolor}`,
-            borderRadius: "50%",
-            width: "2.2rem",
-            height: "2.2rem",
-          }}
-        >
-          <p>k</p>
+        <div id={"account"}>
+          {isLogin ? (
+            <div className={"logined"} onClick={() => setOpen(!open)}>
+              <img src={icon} alt={"account"} />
+            </div>
+          ) : (
+            <Link to={"/login"} className={"Link"}>
+              <div className={"notlogined"} onClick={() => setOpen(!open)}>
+                <p>ログイン</p><span className="material-symbols-outlined">login</span>
+              </div>
+            </Link>
+          )}
         </div>
+        { open && isLogin && (
+          <div className={"accountmenu"}>
+            <Link to={"/mypage"} className={"Link up"}>
+              <p>マイページ</p>
+            </Link>
+            <Link to={"/setting"} className={"Link"}>
+              <p>設定</p>
+            </Link>
+            <Link to={"/logout"} className={"Link bottom"}>
+              <p>ログアウト</p>
+            </Link>
+          </div>
+        )}
+        { open && isLogin && (
+          <div className={"overlay"} onClick={() => setOpen(!open)}></div>
+        )}
       </header>
     </>
   );
