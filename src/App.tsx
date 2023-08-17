@@ -1,10 +1,9 @@
 import './App.css';
 
 function App() {
-
   return (
     <>
-    <h1>React + Vite</h1>
+      <h1>React + Vite</h1>
     </>
   );
 }
