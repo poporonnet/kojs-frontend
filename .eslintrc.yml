@@ -15,6 +15,18 @@ plugins:
   - react
   - react-hooks
   - '@typescript-eslint'
+  - jest-dom
+  - testing-library
 rules:
   react-hooks/rules-of-hooks: error
   react-hooks/exhaustive-deps: warn
+overrides:
+  - files:
+    - '**/__tests__/**/*.+(ts|tsx|js)'
+    - '**/?(*.)+(spec|test).+(ts|tsx|js)'
+  - extends:
+    - plugin:jest-dom/recommended
+    - plugin:testing-library/react
+ignorePatterns:
+  - vite.config.ts
+  - vitest.setup.ts
